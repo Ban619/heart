@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for u <3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="notebook-page" id="main-note">
+        <div class="scribble">XOXO</div>
+        <span class="emoji-stage" id="face"></span>
+        <h1>will you <br> be my <br> valentine?</h1>
+        <p id="beg-text">hmm...?</p>
+        
+        <div class="btn-wrap">
+            <button class="yes-btn" onclick="stepOne()">YES!</button>
+            <button class="no-btn" id="chase-btn">diko</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="modal1">
+        <div class="sticky-note">
+            <h2 style="margin: 0 0 15px 0;">sure?? 🤨</h2>
+            <button class="yes-btn" onclick="stepTwo()">LAGIII</button>
+            <br><br>
+            <button class="back-btn" onclick="hideAll()">aysa...</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="modal2">
+        <div class="sticky-note" style="background: #b9fbc0; transform: rotate(-3deg);">
+            <h2 style="margin: 0 0 15px 0;">real??</h2>
+            <button class="yes-btn" onclick="finish()">YES</button>
+            <br><br>
+            <button class="back-btn" onclick="hideAll()">actually nvm</button>
+        </div>
+    </div>
+
+    <div id="final-screen">
+        <span style="font-size: 10rem;">😉</span>
+        <h1 style="color: white; font-size: 2rem;">kita ta later sa mall❤️</h1>
+        <p style="color: white; font-size: 1.8rem;">5pm</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
